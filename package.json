@@ -1,0 +1,19 @@
+{
+  "name": "qa-web-cypress-javascript",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Estrutura inicial de automação web com Cypress e JavaScript no Automation Exercise.",
+  "scripts": {
+    "cy:open": "cypress open --e2e",
+    "test": "cypress run --e2e",
+    "test:smoke": "cypress run --e2e --spec cypress/e2e/smoke/home.cy.js",
+    "test:chrome": "cypress run --e2e --browser chrome"
+  },
+  "engines": {
+    "node": "^22.0.0 || ^24.0.0 || >=26.0.0",
+    "npm": ">=10.1.0"
+  },
+  "devDependencies": {
+    "cypress": "16.1.0"
+  }
+}
